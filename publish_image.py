@@ -1,7 +1,6 @@
 import json
 import requests
 from send_notification import send_notif
-from time import sleep
 
 def publish_image(image_url):
     access_token = "EAANr4f2un40BAGNwlx7V9DZAvKDG1vS3cRQ1Vuwc3PPy4eN2ZCpj4xPJ6e2qpRTCEGLOA0ZAZCUkFqdUAxZAKMKb3KWkSdAgZBgoZBQZBFnIuiAgCFfkqKkzZA1z6ZCItFuirT5bWO8XorFcMj6zQCqD73sGUO33LbbYBWoDyd6ZCYwoKe2Dr5cP3AZB"
@@ -35,8 +34,3 @@ def publish_image(image_url):
     else:
         send_notif("steampunk - NEIN GUT", image_url)
         print("nein gut")
-
-
-for x in range(117):
-    publish_image("https://instabotsoubory.michael36500.repl.co/steampunk/{}.png".format(x))
-    sleep(15*60)
