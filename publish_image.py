@@ -1,6 +1,7 @@
 import json
 import requests
 from send_notification import send_notif
+from get_hashtags import get_hashtags
 
 def publish_image(image_url):
     access_token = "EAANr4f2un40BAGNwlx7V9DZAvKDG1vS3cRQ1Vuwc3PPy4eN2ZCpj4xPJ6e2qpRTCEGLOA0ZAZCUkFqdUAxZAKMKb3KWkSdAgZBgoZBQZBFnIuiAgCFfkqKkzZA1z6ZCItFuirT5bWO8XorFcMj6zQCqD73sGUO33LbbYBWoDyd6ZCYwoKe2Dr5cP3AZB"
@@ -11,7 +12,7 @@ def publish_image(image_url):
 
     payload = {
         "image_url" : image_url,
-        "caption" : "Lul going back",
+        "caption" : "STEAMPUNK CITY!!! \n\n\n" + get_hashtags(),
         "access_token" : access_token
     }
 
