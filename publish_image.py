@@ -4,7 +4,7 @@ from send_notification import send_notif
 from get_hashtags import get_hashtags
 
 def publish_image(image_url):
-    access_token = "EAANr4f2un40BAGNwlx7V9DZAvKDG1vS3cRQ1Vuwc3PPy4eN2ZCpj4xPJ6e2qpRTCEGLOA0ZAZCUkFqdUAxZAKMKb3KWkSdAgZBgoZBQZBFnIuiAgCFfkqKkzZA1z6ZCItFuirT5bWO8XorFcMj6zQCqD73sGUO33LbbYBWoDyd6ZCYwoKe2Dr5cP3AZB"
+    access_token = open("tokens.txt", "r").readlines()[0]
     ig_user_id = "17841453253198967"
     # image_url = "http://pure80spop.co.uk/wp-content/uploads/2020/07/Rick_Astley-1600x1069.jpg"
 

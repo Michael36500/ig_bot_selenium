@@ -49,4 +49,4 @@ def get_hashtags():
 
     return hst
 
-print(get_hashtags())
+# print(get_hashtags())
