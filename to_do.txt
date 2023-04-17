@@ -1,9 +1,0 @@
-ssh michael@192.168.10.212
-password: michael
-cd Documents/GitHub/
-rm -r ig_bot_selenium
-git clone https://github.com/Michael36500/ig_bot_selenium
-cd ig_bot_selenium
-sudo systemctl status crond
-crontab -e
-0,15,30,45 * * * * /home/michael/Documents/GitHub/ig_bot_selenium/run.sh
