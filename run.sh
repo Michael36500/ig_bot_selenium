@@ -1,1 +1,1 @@
-run_by_count.py
+python run_by_count.py

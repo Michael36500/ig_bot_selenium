@@ -4,3 +4,5 @@ def send_notif(title, body):
     token = open("tokens.txt", "r").readlines()[1]
     pb = pushbullet.PushBullet(token)
     push = pb.push_note(title, body)
+
+# send_notif("LUL", "none")
